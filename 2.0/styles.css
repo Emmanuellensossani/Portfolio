@@ -1,0 +1,56 @@
+*
+ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #191919;
+}
+
+/* ----------HEADER---------- */
+
+nav {
+    width: 100%;
+    padding: 30px;
+    top:0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+
+    background-color: #191919;
+    font-family: 'Bebas Neue', sans-serif;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 30px;
+
+  }
+  
+  ul {
+    width: 245px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  nav a {
+    
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+
+    color: white;
+    font-size: 23px;
+  }
+  
+  nav a:hover{
+    color: #FFD166;
+    transition: 0.3s;
+  }
+
+/* ----------MAIN---------- */
+
+
