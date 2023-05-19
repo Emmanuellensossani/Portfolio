@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/graphik');
+                
 *
  {
   box-sizing: border-box;
@@ -21,14 +24,13 @@ nav {
     position: sticky;
 
     background-color: #191919;
-    font-family: 'Bebas Neue', sans-serif;
-    border-bottom: 1px solid black;
-    box-shadow: 0px 1px 30px;
+    font-family: 'Heebo', sans-serif;
 
   }
   
   ul {
-    width: 245px;
+    max-width: max-content;
+    width: max-content;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -39,17 +41,22 @@ nav {
     
     margin: 0 10px;
     text-decoration: none;
-    text-transform: uppercase;
     position: relative;
 
     color: white;
-    font-size: 23px;
+    font-size: 17px;
   }
   
   nav a:hover{
     color: #FFD166;
     transition: 0.3s;
   }
+
+#barre_nav {
+  background: white;
+  height: 1px;
+  margin: 0 30px;
+}
 
 /* ----------MAIN---------- */
 
