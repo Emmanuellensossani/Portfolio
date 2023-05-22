@@ -1,56 +1,129 @@
-*
- {
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/graphik');
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-    background-color: #191919;
+  background-color: #191919;
+  color: white;
 }
+
+/* ---------CURSEUR---------- */
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  animation: rotate normal infinite 10s linear;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+/* .cursor:hover {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(50%, 50%); 
+  width: 5px;
+  height: 5px;
+  background: white;
+} */
 
 /* ----------HEADER---------- */
 
 nav {
-    width: 100%;
-    padding: 30px;
-    top:0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
+  width: 100%;
+  padding: 30px;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
 
-    background-color: #191919;
-    font-family: 'Bebas Neue', sans-serif;
-    border-bottom: 1px solid black;
-    box-shadow: 0px 1px 30px;
+  background-color: #191919;
+  font-family: 'Heebo', sans-serif;
 
-  }
-  
-  ul {
-    width: 245px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  
-  nav a {
-    
-    margin: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
+}
 
-    color: white;
-    font-size: 23px;
-  }
-  
-  nav a:hover{
-    color: #FFD166;
-    transition: 0.3s;
-  }
+ul {
+  max-width: max-content;
+  width: max-content;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav a {
+
+  margin: 0 10px;
+  text-decoration: none;
+  position: relative;
+
+  color: white;
+  font-size: 17px;
+  padding: 1px;
+}
+
+nav a:hover {
+  color: #FFD166;
+  transition: 0.3s;
+  /* outline: solid white;
+    border-radius: 9px; */
+
+}
+
+#barre_nav {
+  background: white;
+  height: 1px;
+  margin: 0 30px;
+}
 
 /* ----------MAIN---------- */
 
+main {
+  /* cursor: none; */
+  margin: 0 30px;
+}
 
+/* welcome */
+
+#welcome {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  font-family: 'Graphik', sans-serif;
+  height: 85vh;
+}
+
+#welcome h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 74px;
+  margin: 10px 0;
+}
+
+#welcome h1:nth-child(2) {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 74px;
+
+  color: #ffffff00;
+  -webkit-text-stroke: 1px white;
+}
