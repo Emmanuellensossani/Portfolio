@@ -17,14 +17,27 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
-  background-color: red;
-  width: 20px;
-  height: 20px;
+  z-index: -1;
   border-radius: 50%;
-
+  animation: rotate normal infinite 10s linear;
 }
 
+@keyframes rotate {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+/* .cursor:hover {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(50%, 50%); 
+  width: 5px;
+  height: 5px;
+  background: white;
+} */
 
 /* ----------HEADER---------- */
 
