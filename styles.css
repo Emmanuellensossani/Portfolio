@@ -45,11 +45,15 @@ nav {
 
     color: white;
     font-size: 17px;
+    padding: 1px;
   }
   
   nav a:hover{
     color: #FFD166;
     transition: 0.3s;
+    /* outline: solid white;
+    border-radius: 9px; */
+    
   }
 
 #barre_nav {
