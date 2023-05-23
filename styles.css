@@ -23,9 +23,9 @@ body {
 }
 
 @keyframes rotate {
-	to {
-		transform: rotate(-360deg);
-	}
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 /* .cursor:hover {
@@ -109,7 +109,7 @@ main {
   height: 85vh;
 }
 
-#welcome h1{
+#welcome h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 67px;
@@ -127,3 +127,24 @@ main {
   color: #ffffff00;
   -webkit-text-stroke: 1px white;
 }
+
+/* presentation */
+
+#presentation {
+  height: 100vh;
+
+  background-color: #313131;
+}
+
+#presentation #moi {
+  border: 2px solid white;
+}
+
+#moi h4 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+
