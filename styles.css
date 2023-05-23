@@ -130,14 +130,27 @@ main {
 
 /* presentation */
 
+#moi {
+  width: 70%;
+  box-shadow: 30PX 30px #7B66FF;
+}
+
+
+.cadre {
+    border: 2px solid white;
+    display: flex;
+    padding: 1% 3%;
+}
+
+.mmi {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 #presentation {
   height: 100vh;
 
   background-color: #313131;
-}
-
-#presentation #moi {
-  border: 2px solid white;
 }
 
 #moi h4 {
@@ -146,5 +159,15 @@ main {
   font-weight: 700;
   font-size: 22px;
   line-height: 24px;
+  text-transform: uppercase;
+}
+
+#moi p {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: justify;
 }
 
