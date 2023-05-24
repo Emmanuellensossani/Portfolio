@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+::selection {
+  background-color: #70C9DD;
+}
+
 body {
   background-color: #191919;
   color: white;
@@ -123,7 +127,6 @@ main {
   font-weight: 700;
   font-size: 67px;
   line-height: 74px;
-
   color: #ffffff00;
   -webkit-text-stroke: 1px white;
 }
@@ -132,7 +135,14 @@ main {
 
 #moi {
   width: 70%;
-  box-shadow: 30PX 30px #7B66FF;
+  transform: translate(30px,30px);
+  transition: ease-in 0.3s;
+}
+
+#moi:hover {
+  box-shadow: 30px 30px #7B66FF;
+  transform: translate();
+  transition: ease-in 0.3s;
 }
 
 
@@ -150,7 +160,6 @@ main {
 #presentation {
   height: 100vh;
 
-  background-color: #313131;
 }
 
 #moi h4 {
