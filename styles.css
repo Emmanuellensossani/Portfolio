@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/graphik');
+@import url('https://fonts.cdnfonts.com/css/lucida-console');
 
 * {
   box-sizing: border-box;
@@ -50,7 +51,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translate(50%, 50%); 
+  /* transform: translate(50%, 50%);
   width: 5px;
   height: 5px;
   background: white;
@@ -319,7 +320,7 @@ main {
 
 }
 
-.cadre_parcours:hover{
+.cadre_parcours:hover {
   transform: scale(1.1) rotate(4deg);
 }
 
@@ -346,7 +347,8 @@ main {
   font-weight: 500;
   font-size: 22px;
 
-  color: rgba(255, 255, 255, 0.8);;
+  color: rgba(255, 255, 255, 0.8);
+  ;
 }
 
 #now {
@@ -359,4 +361,116 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ----------COMPETENCE----------- */
+
+.titre_comp {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+  text-transform: uppercase;
+}
+
+.all_icone {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3vh;
+}
+
+.all_icone .icone {
+  width: 124px;
+  height: 124px;
+  border: 2px solid white;
+}
+
+.icone {
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.icone:hover {
+  transform: translateY(-5px)
+}
+
+#web .icone:nth-child(1) {
+  background-image: url(image/html.svg);
+}
+
+#web .icone:nth-child(2) {
+  background-image: url(image/css.png);
+}
+
+#web .icone:nth-child(3) {
+  background-image: url(image/js.svg);
+}
+
+#web .icone:nth-child(4) {
+  background-image: url(image/php.svg);
+}
+
+#web .icone:nth-child(5) {
+  background-image: url(image/python.png);
+}
+
+#web .icone:nth-child(6) {
+  background-image: url(image/sql.png);
+}
+
+#web .icone:nth-child(7) {
+  background-image: url(image/wordpress.svg);
+}
+
+#crea .icone:nth-child(1) {
+  background-image: url(image/adobe-illustrator.png);
+}
+
+#crea .icone:nth-child(2) {
+  background-image: url(image/photoshop.png);
+}
+
+#crea .icone:nth-child(3) {
+  background-image: url(image/premiere-pro.png);
+}
+
+#crea .icone:nth-child(4) {
+  background-image: url(image/after-effects.png);
+}
+
+#crea .icone:nth-child(5) {
+  background-image: url(image/adobe-animate.png);
+}
+
+#crea .icone:nth-child(6) {
+  background-image: url(image/indesign.png);
+}
+
+#crea .icone:nth-child(7) {
+  background-image: url(image/figma.png);
+}
+
+.p_icone {
+  /* background-color: white; */
+  width: 85vw;
+  /* display: flex; */
+  margin: auto;
+}
+
+.p_icone p {
+  color: white;
+  font-family: 'Lucida Console', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.comp {
+  margin-bottom: 9vh;
 }
