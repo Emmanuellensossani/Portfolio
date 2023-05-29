@@ -8,7 +8,8 @@
 }
 
 ::selection {
-  background-color: #70C9DD;
+  background-color: #BCFF00;
+  color: #0D0D0D;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   left: 0;
   z-index: -1;
   border-radius: 50%;
-  animation: rotate normal infinite 10s linear;
+  animation: rotate normal infinite 15s linear;
 }
 
 .cursor::before {
@@ -31,7 +32,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -123,11 +124,11 @@ main {
   margin: 0 30px;
   font-family: 'Graphik', sans-serif;
   height: 87vh;
-  cursor:none;
+  cursor: none;
   overflow: hidden;
 }
 
-#welcome img{
+#welcome img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -193,11 +194,11 @@ main {
 
 
 .cadre {
-    border: 2px solid white;
-    background: #0D0D0D;
-    display: flex;
-    padding: 1% 3%;
-    flex-direction: column;
+  border: 2px solid white;
+  background: #0D0D0D;
+  display: flex;
+  padding: 1% 3%;
+  flex-direction: column;
 
 }
 
@@ -205,13 +206,26 @@ main {
   box-shadow: 30px 30px #BDA3FF;
 }
 
-.pres {
-
+#top {
+  display: flex;
 }
 
-.mmi {
-
+#div_bout {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
 }
+
+#div_bout img {
+  width: 60%;
+  height: 60%;
+  animation: rotate normal infinite 15s linear;
+}
+
+.pres {}
+
+.mmi {}
 
 
 #presentation {
@@ -221,7 +235,8 @@ main {
   flex-direction: column;
 }
 
-#moi h4,#mmi h4 {
+#moi h4,
+#mmi h4 {
   font-family: 'Graphik';
   font-style: normal;
   font-weight: 700;
@@ -230,7 +245,8 @@ main {
   text-transform: uppercase;
 }
 
-#moi p, #mmi p {
+#moi p,
+#mmi p {
   background-color: #0D0D0D;
   font-family: 'Heebo';
   font-style: normal;
@@ -240,10 +256,41 @@ main {
   text-align: justify;
 }
 
-#plus_mmi:hover{
-  color: #70C9DD;
-}
 
 #surligner {
   text-decoration: 3px underline #BCFF00;
+}
+
+/* -----------A PROPOS---------- */
+
+#titre {
+
+  margin:7vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 700;
+
+}
+
+.a_propos h1 {
+  
+  font-size: 4vw;
+  line-height: 5vw;
+  margin: 1vh 0;
+
+}
+
+.a_propos h2 {
+
+  font-size: 8.5vw;
+  line-height: 9vw;
+  margin: 1vh 0;
+
+  color: #BDA3FF;
+
 }
