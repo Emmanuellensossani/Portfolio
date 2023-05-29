@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 381">
+  <rect width="1366" height="381" style="fill: #0d0d0d;"/>
+  <g>
+    <g>
+      <line x1="359.91" y1="68.5" x2="369.41" y2="68.5" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="388.44" y1="68.5" x2="988.08" y2="68.5" style="fill: none; stroke: #bcff00; stroke-dasharray: 0 0 19.04 19.04; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="997.59" y1="68.5" x2="1007.09" y2="68.5" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+    </g>
+    <g>
+      <line x1="1007.09" y1="320" x2="1007.09" y2="310.5" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="1007.09" y1="292.62" x2="1007.09" y2="86.94" style="fill: none; stroke: #bcff00; stroke-dasharray: 0 0 17.88 17.88; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="1007.09" y1="78" x2="1007.09" y2="68.5" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+    </g>
+    <g>
+      <line x1="690.13" y1="320" x2="699.63" y2="320" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="719.5" y1="320" x2="987.66" y2="320" style="fill: none; stroke: #bcff00; stroke-dasharray: 0 0 19.86 19.86; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <line x1="997.59" y1="320" x2="1007.09" y2="320" style="fill: none; stroke: #bcff00; stroke-miterlimit: 10; stroke-width: 3px;"/>
+    </g>
+  </g>
+</svg>

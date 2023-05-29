@@ -263,9 +263,13 @@ main {
 
 /* -----------A PROPOS---------- */
 
+.a_propos section {
+  margin-bottom: 10vh;
+}
+
 #titre {
 
-  margin:7vh 0;
+  margin: 5vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +282,7 @@ main {
 }
 
 .a_propos h1 {
-  
+
   font-size: 4vw;
   line-height: 5vw;
   margin: 1vh 0;
@@ -293,4 +297,66 @@ main {
 
   color: #BDA3FF;
 
+}
+
+#parcours {
+  display: flex;
+  flex-direction: column;
+  background-image: url(image/dash_path.svg);
+  background-repeat: no-repeat;
+}
+
+.cadre_parcours {
+
+  border: 2px solid white;
+  background: #0D0D0D;
+  display: flex;
+  padding: 1% 3%;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  transition: 0.3s;
+
+}
+
+.cadre_parcours:hover{
+  transform: scale(1.1) rotate(4deg);
+}
+
+.cadre_parcours h5 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.cadre_parcours .diplome {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+
+  color: #BDA3FF;
+}
+
+.cadre_parcours .ville {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+
+  color: rgba(255, 255, 255, 0.8);;
+}
+
+#now {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 7%;
+}
+
+.soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
