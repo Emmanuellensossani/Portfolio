@@ -59,6 +59,10 @@ body {
 
 /* ----------HEADER---------- */
 
+header {
+  border-bottom: 2px solid;
+}
+
 nav {
   width: 100%;
   padding: 30px;
@@ -101,11 +105,6 @@ nav a:hover {
 
 }
 
-#barre_nav {
-  background: white;
-  height: 1px;
-  margin: 0 30px;
-}
 
 /* ----------MAIN---------- */
 
@@ -473,4 +472,24 @@ main {
 
 .comp {
   margin-bottom: 9vh;
+}
+
+/* ---------A PROPOS--------- */
+
+#cv {
+  height: 87vh;
+}
+
+#descr {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#cv p {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
 }
