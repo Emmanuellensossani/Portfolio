@@ -286,6 +286,8 @@ main {
   grid-area: 1/1;
   z-index: -1;
   position: relative;
+  display: flex;
+  flex-direction: column;
   /* overflow: hidden; */
 }
 
