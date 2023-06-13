@@ -54,6 +54,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 /* .cursor:hover {
   content: "";
   position: absolute;
@@ -328,8 +329,13 @@ main {
 }
 
 @keyframes scrolling {
-    0% { margin-left: 0; }
-    100% { margin-left: -100%; }
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -100%;
+  }
 }
 
 /* -----------A PROPOS---------- */
@@ -572,7 +578,8 @@ main {
   text-align: center;
 }
 
-#musique, #cv {
+#musique,
+#cv {
   width: 40%;
 }
 
@@ -619,6 +626,7 @@ button {
   width: 40px;
   height: 40px;
 }
+
 #audio-player-container {
   position: relative;
   margin: 100px 5% auto 5%;
@@ -627,6 +635,7 @@ button {
   height: 80px;
   background: #fff;
 }
+
 #audio-player-container::before {
   position: absolute;
   content: '';
@@ -651,7 +660,7 @@ path {
 }
 
 .show {
-  
+
   transition: ease-in 0.3s;
 }
 
@@ -666,23 +675,41 @@ path {
 }
 
 
-.cv{
+.cv {
+  position: relative;
   margin-bottom: 30px;
   width: 80%;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid ;
+  border: 2px solid #BDA3FF;
   transition: all .35s;
 
 }
 
-.cv p{
+.cv::after {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BDA3FF;
+    transition: all .35s;
+  
+}
+
+.cv p {
   position: relative;
   z-index: 2;
 }
 
-.cv:hover{
-  color: #fff;
+.cv:hover {
+  color: #BDA3FF;
+}
+
+.cv:hover:after{
+  width: 100%;
 }
