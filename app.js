@@ -31,3 +31,16 @@ function parallax(a){
 
   });
 }
+
+const audio = document.getElementById('mus-audio');
+const image = document.getElementById('mus-img');
+
+audio.addEventListener('play', () => {
+  image.classList.add('animation-active');
+  image.classList.remove('animation-inactive');
+});
+
+audio.addEventListener('pause', () => {
+  image.classList.add('animation-inactive');
+  image.classList.remove('animation-active');
+}); 

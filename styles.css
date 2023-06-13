@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/graphik');
 @import url('https://fonts.cdnfonts.com/css/lucida-console');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -16,6 +18,7 @@
 body {
   background-color: #0D0D0D;
   color: white;
+  /* scroll-behavior: smooth; */
 }
 
 /* ---------CURSEUR---------- */
@@ -46,6 +49,11 @@ body {
   }
 }
 
+@keyframes rotate_inverse {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* .cursor:hover {
   content: "";
   position: absolute;
@@ -544,8 +552,10 @@ main {
 /* ---------A PROPOS--------- */
 
 #apropos {
-  height: 87vh;
+  height: 58vh;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #descr {
@@ -566,15 +576,74 @@ main {
   width: 40%;
 }
 
-.cv {
-  margin-bottom: 30px;
-  width: 80%;
-  height: 70px;
+#mus {
+  margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  /* border: 2px solid #BCFF00; */
+  width: 70%;
+  height: 50%;
+}
 
-  border: 2px solid;
+#mus figure {
+  margin-top: 40px;
+}
+
+#mus-img {
+  width: 70%;
+  animation: rotate_inverse normal infinite 15s linear;
+
+}
+
+.animation-active {
+  animation-play-state: running;
+}
+
+.animation-inactive {
+  animation-play-state: paused;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #BCFF00;
+  width: 80%;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: inherit;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+#audio-player-container {
+  position: relative;
+  margin: 100px 5% auto 5%;
+  width: 90%;
+  max-width: 500px;
+  height: 80px;
+  background: #fff;
+}
+#audio-player-container::before {
+  position: absolute;
+  content: '';
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to left, #007db5, #ff8a00);
+  z-index: -1;
+}
+
+#play-icon {
+  margin: 20px 2.5% 20px 2.5%;
+}
+
+path {
+  stroke: #007db5;
 }
 
 #para {
@@ -582,7 +651,7 @@ main {
 }
 
 .show {
-  border-color: #BDA3FF;
+  
   transition: ease-in 0.3s;
 }
 
@@ -594,4 +663,26 @@ main {
 #descr a {
   text-decoration: none;
   color: white;
+}
+
+
+.cv{
+  margin-bottom: 30px;
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid ;
+  transition: all .35s;
+
+}
+
+.cv p{
+  position: relative;
+  z-index: 2;
+}
+
+.cv:hover{
+  color: #fff;
 }
