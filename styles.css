@@ -120,6 +120,21 @@ nav a:hover {
   font-size: 20px;
 }
 
+
+/* ----------FOOTER---------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  height: 7vh;
+  font-family: 'GRAPHIK';
+  /* background: red; */
+  align-items: center;
+  border-top: 2px solid;
+
+}
+
 /* ----------MAIN---------- */
 
 main {
@@ -690,15 +705,15 @@ path {
 
 .cv::after {
 
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #BDA3FF;
-    transition: all .35s;
-  
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #BDA3FF;
+  transition: all .35s;
+
 }
 
 .cv p {
@@ -710,6 +725,53 @@ path {
   color: #BDA3FF;
 }
 
-.cv:hover:after{
+.cv:hover:after {
   width: 100%;
+}
+
+/* ME CONTACTER */
+
+#contact h1 {
+  font-size: 5vw;
+  line-height: 9vw;
+  margin: 5vh 0 9vh 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Graphik';
+
+  color: #BDA3FF;
+}
+
+.titre-contact {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 2vh;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.lien-contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 13vh;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+.lien-contact:hover {
+  color: #BCFF00;
+  text-decoration-line: underline;
+  transition: all 0.3s;
 }
