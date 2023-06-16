@@ -785,3 +785,40 @@ path {
   bottom: 0;
   width: 100%;
 }
+
+/* -------------MES PROJETS----------- */
+
+#page_projet h1 {
+  font-size: 5vw;
+  line-height: 9vw;
+  margin: 5vh 0 9vh 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Graphik';
+
+  color: #BDA3FF;
+}
+
+#page_projet section {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 30px 100px 30px; 
+  width: 90vw;
+  /* border: 1px solid white; */
+}
+
+#page_projet #titre_projet {
+  border: 2px solid white;
+}
+
+#page_projet #contenu_projet {
+  border-left: 2px solid white;
+  border-right: 2px solid white;}
+
+#page_projet #descr_projet {
+  border: 2px solid white;
+}
+
+#page_projet img {
+  width: 637px;
+}
