@@ -731,6 +731,10 @@ path {
 
 /* ME CONTACTER */
 
+#contact-page {
+  height: 100vh;
+}
+
 #contact h1 {
   font-size: 5vw;
   line-height: 9vw;
@@ -774,4 +778,10 @@ path {
   color: #BCFF00;
   text-decoration-line: underline;
   transition: all 0.3s;
+}
+
+#contact-page .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
