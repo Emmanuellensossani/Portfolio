@@ -956,12 +956,9 @@ path {
 }
 
 .carousel__slide::marker {
-  display: none;
+  color: #0000ff00;
 }
 
-.carousel__slide:nth-child(even) {
-  background-color: #99f;
-}
 
 /* .carousel__slide:before {
   content: counter(item);
@@ -1023,12 +1020,16 @@ path {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #333;
+  background-color: #BDA3FF;
   background-clip: content-box;
-  border: 0.25rem solid transparent;
+  border: 0.25rem solid trFansparent;
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s;
+}
+
+.carousel__navigation-button:hover {
+  background-color: #BCFF00;
 }
 
 .carousel::before,
@@ -1098,9 +1099,14 @@ path {
   margin-bottom: 20px;
 }
 
-.contenu_carousel p:nth-child(2) {
+.contenu_carousel p {
   font-family: 'Heebo';
   font-weight: 400;
   font-size: 22px;
   text-align: justify;
+  color: white;
+}
+
+.contenu_carousel a {
+  color: white;
 }
