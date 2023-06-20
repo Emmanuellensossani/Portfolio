@@ -26,6 +26,7 @@ function parallax(a){
     var moving_value = move.getAttribute("data-value");
     var x = (a.clientX*moving_value) / 250;
     var y =(a.clientY * moving_value) / 250;
+    
 
     move.style.transform = "translateX("+x +"px) translateY("+y+"px)";
 
@@ -44,3 +45,22 @@ audio.addEventListener('pause', () => {
   image.classList.add('animation-inactive');
   image.classList.remove('animation-active');
 }); 
+
+// ANIMATION SCROLL 
+
+const apparition_top = document.querySelector('.apparition_haut');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    // console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = apparition_top.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+      apparition_top.classList.add('active')
+    }
+})
