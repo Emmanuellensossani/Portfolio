@@ -549,7 +549,7 @@ main {
 .all_icone .icone {
   width: 124px;
   height: 124px;
-  border: 2px solid white;
+  opacity: 0.8;
 }
 
 .icone {
@@ -560,7 +560,8 @@ main {
 }
 
 .icone:hover {
-  transform: translateY(-5px)
+  transform: translateY(-5px);
+  opacity: 1;
 }
 
 #web .icone:nth-child(1) {
@@ -897,6 +898,7 @@ path {
   display: flex;
   text-align: center;
   justify-content: center;
+  border-top: 0px;
 }
 
 #page_projet img {
