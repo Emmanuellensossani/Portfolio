@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    margin: 0;
+    height: 20vh;
+    color: white;
+    background-color: aquamarine;
+    font-family: 'Obviously';
+}
